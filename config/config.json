@@ -1,8 +1,8 @@
 {
-    "username":"admin",
-    "password":"amdmin",
-    "MongoURI":"mongodb+srv://admin:amdmin@cluster0.ilnx1.mongodb.net/",
-    "email":"vismay@addwebsolution.in",
+    "username":"",
+    "password":"",
+    "MongoURI":"",
+    "email":"",
     "appPass":"qhfsxuzyongekmps",
     "secretToken":"1235"
 }
