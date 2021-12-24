@@ -1,10 +1,9 @@
 import './App.css';
-import SelectType from './pages/SelectType';
-
+import Details from './pages/DetailsOfType';
 function App() {
   return (
     <div className="App">
-      <SelectType />
+      <Details />
     </div>
   );
 }

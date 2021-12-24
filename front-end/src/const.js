@@ -18,7 +18,26 @@ export const type = [
   { value: "steel", label: "steel" },
   { value: "water", label: "water" },
 ];
-
+export const simpleType = [
+   "bug",
+   "dark",
+   "dragon",
+   "electric",
+   "fairy",
+   "fighting",
+   "fire",
+   "flying",
+   "ghost",
+   "grass",
+   "ground",
+   "ice",
+   "normal",
+   "poison",
+   "psychic",
+   "rock",
+   "steel",
+   "water"
+];
 var typeSvg = require.context("../badge", true, /\.svg$/);
 const paths = typeSvg.keys();
 export const svgs = paths.map((path) => typeSvg(path));

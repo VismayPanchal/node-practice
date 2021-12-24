@@ -1,4 +1,4 @@
-import { type, svgs } from "../const";
+import { type, svgs } from "../../const";
 
 const Resistance = (props) => {
   let indices = [];
@@ -9,8 +9,8 @@ const Resistance = (props) => {
       }
     }
   return (
-    <div>
-        <h2>Resistances</h2>
+    <div style={{float:"left",marginLeft:40}}>
+        <h2>Resistances</h2><h3>0.625X damage</h3>
       {(props.resistance && indices.length) &&
         props.resistance.map((resistances, i) => (
           <p key={i}>

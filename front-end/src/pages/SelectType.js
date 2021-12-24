@@ -3,16 +3,16 @@ import { type,svgs } from "../const";
 import Select, { components } from "react-select";
 import Details from "./DetailsOfType";
 
-const SelectType = () => {
+const SelectType = (props) => {
   const { Option } = components;
   const [selectedOption, setSelectedOption] = useState(null);
  
   const handleChange = e => {
     setSelectedOption(e);
+    props.get(e)
   }
  
   const CustomSelectOption = (props) => {
-    const Icon = props.data.icon;
     return (
       <Option {...props}>
         <label>
@@ -40,7 +40,6 @@ const SelectType = () => {
         }}
       />
     </div>
-    {selectedOption && <Details type={selectedOption} />}
     </>
   );
 };

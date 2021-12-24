@@ -5,7 +5,9 @@ var type = new mongoose.Schema({
     effectiveAgainst:[{type:String}],
     weakAgainst:[{type:String}],
     resistance:[{type:String}],
-    immune:[{type:String}]
+    immuneDMG:[{type:String}],
+    immuneATK:[{type:String}]
+
 })
 
 var Types = mongoose.model('Types',type)
