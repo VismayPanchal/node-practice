@@ -1,145 +1,145 @@
 const data = [
     {
-        pokemonType:'bug',
-        effectiveAgainst:['dark','psychic','grass'],
-        weakAgainst:['fire','rock','flying'],
-        resistance:['fighting','ground','grass'],
+        pokemonType:'Bug',
+        effectiveAgainst:['Dark','Psychic','Grass'],
+        weakAgainst:['Fire','Rock','Flying'],
+        resistance:['Fighting','Ground','Grass'],
         immuneDMG:[],
         immuneATK:[]
     },
     {
-        pokemonType:'normal',
+        pokemonType:'Normal',
         effectiveAgainst:[],
-        weakAgainst:['fighting'],
+        weakAgainst:['Fighting'],
         resistance:[],
-        immuneDMG:['ghost'],
-        immuneATK:['ghost']
+        immuneDMG:['Ghost'],
+        immuneATK:['Ghost']
     },
     {
-        pokemonType:'dragon',
-        effectiveAgainst:['dragon'],
-        weakAgainst:['dragon','fairy','ice'],
-        resistance:['water','grass','electric','fire'],
+        pokemonType:'Dragon',
+        effectiveAgainst:['Dragon'],
+        weakAgainst:['Dragon','Fairy','Ice'],
+        resistance:['Water','Grass','Electric','Fire'],
         immuneDMG:[],
-        immuneATK:['fairy']
+        immuneATK:['Fairy']
     },
     {
-        pokemonType:'dark',
-        effectiveAgainst:['ghost','psychic'],
-        weakAgainst:['bug','fighting','fairy'],
-        resistance:['ghost','dark'],
-        immuneDMG:['psychic'],
+        pokemonType:'Dark',
+        effectiveAgainst:['Ghost','Psychic'],
+        weakAgainst:['Bug','Fighting','Fairy'],
+        resistance:['Ghost','Dark'],
+        immuneDMG:['Psychic'],
         immuneATK:[]
     },
     {
-        pokemonType:'electric',
-        effectiveAgainst:['water','flying'],
-        weakAgainst:['grass','rock','ground'],
-        resistance:['flying','steel','electric'],
+        pokemonType:'Electric',
+        effectiveAgainst:['Water','Flying'],
+        weakAgainst:['Grass','Rock','Ground'],
+        resistance:['Flying','Steel','Electric'],
         immuneDMG:[],
-        immuneATK:['ground']
+        immuneATK:['Ground']
     },
     {
-        pokemonType:'fairy',
-        effectiveAgainst:['fighting','dragon','dark'],
-        weakAgainst:['poison','steel'],
-        resistance:['fighting','bug','dark'],
-        immuneDMG:['dragon'],
+        pokemonType:'Fairy',
+        effectiveAgainst:['Fighting','Dragon','Dark'],
+        weakAgainst:['Poison','Steel'],
+        resistance:['Fighting','Bug','Dark'],
+        immuneDMG:['Dragon'],
         immuneATK:[]
     },
     {
-        pokemonType:'fighting',
-        effectiveAgainst:['normal','ice','dark','steel','rock'],
-        weakAgainst:['flying','psychic','fairy'],
-        resistance:['rock','bug','dark'],
+        pokemonType:'Fighting',
+        effectiveAgainst:['Normal','Ice','Dark','Steel','Rock'],
+        weakAgainst:['Flying','Psychic','Fairy'],
+        resistance:['Rock','Bug','Dark'],
         immuneDMG:[],
-        immuneATK:['ghost']
+        immuneATK:['Ghost']
     },
     {
-        pokemonType:'fire',
-        effectiveAgainst:['grass','ice','steel','bug'],
-        weakAgainst:['water','rock','ground'],
-        resistance:['bug','steel','fire','grass','ice'],
-        immuneDMG:[],
-        immuneATK:[]
-    },
-    {
-        pokemonType:'flying',
-        effectiveAgainst:['grass','fighting','bug'],
-        weakAgainst:['electric','rock','ice'],
-        resistance:['fighting','bug','grass'],
-        immuneDMG:['ground'],
-        immuneATK:[]
-    },
-    {
-        pokemonType:'ghost',
-        effectiveAgainst:['ghost','psychic'],
-        weakAgainst:['ghost','dark'],
-        resistance:['poison','bug'],
-        immuneDMG:['fighting','normal'],
-        immuneATK:['normal']
-    },
-    {
-        pokemonType:'grass',
-        effectiveAgainst:['water','ground','rock'],
-        weakAgainst:['flying','poison','fire','bug','ice'],
-        resistance:['ground','water','grass','electric'],
+        pokemonType:'Fire',
+        effectiveAgainst:['Grass','Ice','Steel','Bug'],
+        weakAgainst:['Water','Rock','Ground'],
+        resistance:['Bug','Steel','Fire','Grass','Ice'],
         immuneDMG:[],
         immuneATK:[]
     },
     {
-        pokemonType:'ground',
-        effectiveAgainst:['fire','steel','electric','poison','rock'],
-        weakAgainst:['water','ice','grass'],
-        resistance:['poison','rock'],
-        immuneDMG:['electric'],
-        immuneATK:['flying']
+        pokemonType:'Flying',
+        effectiveAgainst:['Grass','Fighting','Bug'],
+        weakAgainst:['Electric','Rock','Ice'],
+        resistance:['Fighting','Bug','Grass'],
+        immuneDMG:['Ground'],
+        immuneATK:[]
     },
     {
-        pokemonType:'ice',
-        effectiveAgainst:['grass','flying','dragon','ground'],
-        weakAgainst:['fire','steel','rock','fighting'],
-        resistance:['ice'],
+        pokemonType:'Ghost',
+        effectiveAgainst:['Ghost','Psychic'],
+        weakAgainst:['Ghost','Dark'],
+        resistance:['Poison','Bug'],
+        immuneDMG:['Fighting','Normal'],
+        immuneATK:['Normal']
+    },
+    {
+        pokemonType:'Grass',
+        effectiveAgainst:['Water','Ground','Rock'],
+        weakAgainst:['Flying','Poison','Fire','Bug','Ice'],
+        resistance:['Ground','Water','Grass','Electric'],
         immuneDMG:[],
         immuneATK:[]
     },
     {
-        pokemonType:'poison',
-        effectiveAgainst:['fairy','grass'],
-        weakAgainst:['ground','psychic'],
-        resistance:['fighting','poison','grass','fairy'],
-        immuneDMG:[],
-        immuneATK:['steel']
+        pokemonType:'Ground',
+        effectiveAgainst:['Fire','Steel','Electric','Poison','Rock'],
+        weakAgainst:['Water','Ice','Grass'],
+        resistance:['Poison','Rock'],
+        immuneDMG:['Electric'],
+        immuneATK:['Flying']
     },
     {
-        pokemonType:'psychic',
-        effectiveAgainst:['fighting','poison'],
-        weakAgainst:['dark','ghost','bug'],
-        resistance:['fighting','psychic'],
-        immuneDMG:[],
-        immuneATK:['dark']
-    },
-    {
-        pokemonType:'rock',
-        effectiveAgainst:['flying','bug','ice','fire'],
-        weakAgainst:['grass','water','ground','steel','fighting'],
-        resistance:['normal','flying','poison','fire'],
+        pokemonType:'Ice',
+        effectiveAgainst:['Grass','Flying','Dragon','Ground'],
+        weakAgainst:['Fire','Steel','Rock','Fighting'],
+        resistance:['Ice'],
         immuneDMG:[],
         immuneATK:[]
     },
     {
-        pokemonType:'steel',
-        effectiveAgainst:['fairy','rock','ice'],
-        weakAgainst:['fire','fighting','ground'],
-        resistance:['normal','flying','rock','bug','steel','grass','psychic','ice','dragon','fairy'],
-        immuneDMG:['poison'],
+        pokemonType:'Poison',
+        effectiveAgainst:['Fairy','Grass'],
+        weakAgainst:['Ground','Psychic'],
+        resistance:['Fighting','Poison','Grass','Fairy'],
+        immuneDMG:[],
+        immuneATK:['Steel']
+    },
+    {
+        pokemonType:'Psychic',
+        effectiveAgainst:['Fighting','Poison'],
+        weakAgainst:['Dark','Ghost','Bug'],
+        resistance:['Fighting','Psychic'],
+        immuneDMG:[],
+        immuneATK:['Dark']
+    },
+    {
+        pokemonType:'Rock',
+        effectiveAgainst:['Flying','Bug','Ice','Fire'],
+        weakAgainst:['Grass','Water','Ground','Steel','Fighting'],
+        resistance:['Normal','Flying','Poison','Fire'],
+        immuneDMG:[],
         immuneATK:[]
     },
     {
-        pokemonType:'water',
-        effectiveAgainst:['fire','rock','ground'],
-        weakAgainst:['electric','grass'],
-        resistance:['steel','water','fire','ice'],
+        pokemonType:'Steel',
+        effectiveAgainst:['Fairy','Rock','Ice'],
+        weakAgainst:['Fire','Fighting','Ground'],
+        resistance:['Normal','Flying','Rock','Bug','Steel','Grass','Psychic','Ice','Dragon','Fairy'],
+        immuneDMG:['Poison'],
+        immuneATK:[]
+    },
+    {
+        pokemonType:'Water',
+        effectiveAgainst:['Fire','Rock','Ground'],
+        weakAgainst:['Electric','Grass'],
+        resistance:['Steel','Water','Fire','Ice'],
         immuneDMG:[],
         immuneATK:[]
     }

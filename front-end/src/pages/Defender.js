@@ -18,10 +18,12 @@ const Defender = ({type}) =>{
 
     return(
         <>
-         <Resistance resistance={typeData.resistance} />
+        {type &&
+        <> <Resistance resistance={typeData.resistance} />
           <Immune immune={typeData.immune} />
           <Weakness weakAgainst={typeData.weakAgainst} />
           <Neutral all={typeData}/>
+          </>}
         </>
     )
 }
