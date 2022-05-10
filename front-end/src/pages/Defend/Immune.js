@@ -1,5 +1,5 @@
 import { type, svgs } from "../../const";
-
+import { Card } from 'react-bootstrap';
 const Immune = (props) => {
   let indices = [];
       var len = Array.isArray(props.immune)? props.immune.length:0
@@ -9,16 +9,16 @@ const Immune = (props) => {
       }
     }
   return (
-    <div style={{float:"left",marginLeft:40}}>
+    <Card className='card'>
         <h2>Immune </h2><h3>0.391X damage</h3>
       {(props.immune && indices.length) &&
         props.immune.map((immunes, i) => (
-          <p key={i}>
+          <label key={i}>
           <label>  <img src={svgs[indices[i]]} style={{width:'40px',height:'40px',verticalAlign:'middle',margin:5}} />
           {immunes}</label>
-          </p>
+          </label>
         ))}
-    </div>
+    </Card>
   );
 };
 

@@ -1,5 +1,5 @@
 import { simpleType,type, svgs } from "../../const";
-
+import { Card } from 'react-bootstrap';
 const Neutral = (props) => {
   let indices = [];
       var weaklen = Array.isArray(props.all.weakAgainst)? props.all.weakAgainst.length:0
@@ -23,7 +23,7 @@ const Neutral = (props) => {
         }
       }
     return (
-    <div style={{float:"left",marginLeft:40}}>
+    <Card className='card'>
         <h2>Neutral DMG recieved</h2><h3>1X damage</h3>
       {(copyArray ) &&
         copyArray.map((nue, i) => (
@@ -32,7 +32,7 @@ const Neutral = (props) => {
           {nue}</label>
           </p>
         ))}
-    </div>
+    </Card>
   );
 };
 

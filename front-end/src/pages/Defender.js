@@ -4,7 +4,7 @@ import Resistance from './Defend/Resistance';
 import Immune from './Defend/Immune';
 import Weakness from './Defend/Weakness';
 import Neutral from './Defend/Neutral';
-
+import { Card } from 'react-bootstrap';
 const Defender = ({type}) =>{
     const [typeData, setTypeData] = useState({});
     useEffect(() => {
@@ -19,11 +19,12 @@ const Defender = ({type}) =>{
     return(
         <>
         {type &&
-        <> <Resistance resistance={typeData.resistance} />
+        <Card className='card'> 
+          <Resistance resistance={typeData.resistance} />
           <Immune immune={typeData.immune} />
           <Weakness weakAgainst={typeData.weakAgainst} />
           <Neutral all={typeData}/>
-          </>}
+          </Card>}
         </>
     )
 }

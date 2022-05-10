@@ -4,9 +4,9 @@ import './PokemonDetails.css'
 import { simpleType,type, svgs } from "../../const";
 import Resistance from '../Defend/Resistance';
 import Weakness from '../Defend/Weakness';
-const PokemonDetail = (props) => {
-    console.log(props, 'nigga')
-    const data = props.details[0]
+const EvolutionLine = (props) => {
+    const data = props.data
+    console.log(data)
     let indices = [];
       var len = Array.isArray(data.type)? data.type.length:0
     for (let i = 0; i < len; i++) {
@@ -14,8 +14,10 @@ const PokemonDetail = (props) => {
         if (type[j].value === data.type[i]) indices.push(j);
       }
     }
+    const style = props.len>1 ? {width:'40%',float:'left',marginLeft:'7%'} : {}
     return (
-        <Card className='Card'>
+        <>
+        <Card className='Card' style={style}>
             <table>
                 <tbody>
                 <tr>
@@ -47,9 +49,9 @@ const PokemonDetail = (props) => {
                         
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>
-                            
+                    <td></td>
+                    <td>
+                    
                     {(data.type && indices.length) &&
                         data.type.map((types, i) => (
                             <div key={i}>
@@ -58,22 +60,23 @@ const PokemonDetail = (props) => {
                         </div>
                         ))}
                         </td>
-                </tr>
-                <tr>
-                    <td> <b>Resistance</b></td>
-                    <td><Resistance resistance={data.typeData[0].resistance} details={true}/></td>
+                        </tr>
+                        <tr>
+                        <td> <b>Resistance</b></td>
+                        <td><Resistance resistance={data.typeData[0].resistance} details={true}/></td>
                     
                 </tr>
                 <tr>
                     <td><b>Weak against</b></td>
                     <td>
-                        <Weakness weakAgainst={data.typeData[0].weakAgainst}  details={true}/>
+                    <Weakness weakAgainst={data.typeData[0].weakAgainst}  details={true}/>
                     </td>
                 </tr>
                 </tbody>
             </table>
         </Card>
+        </>
     )
 }
 
-export default PokemonDetail
+export default EvolutionLine
