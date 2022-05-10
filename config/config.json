@@ -1,8 +1,8 @@
 {
     "username":"",
     "password":"",
-    
+    "MongoURI":"",
     "email":"",
-    "appPass":"",
+    "appPass":"qhfsxuzyongekmps",
     "secretToken":"1235"
 }
